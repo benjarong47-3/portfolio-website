@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
-    <!-- Navigation -->
+
+    <!-- ===========================
+         Loading Screen
+    =========================== -->
+    <div id="loading-screen">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- ===========================
+         Back to Top Button
+    =========================== -->
+    <button id="back-to-top" title="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ===========================
+         Navigation
+    =========================== -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
@@ -21,6 +41,14 @@
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
+                <div>
+                    <input type="checkbox" class="checkbox" id="checkbox">
+                    <label for="checkbox" class="checkbox-label">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <span class="ball"></span>
+                    </label>
+                </div>
             </ul>
             <div class="nav-toggle">
                 <span class="bar"></span>
@@ -30,11 +58,13 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- ===========================
+         Hero Section
+    =========================== -->
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Hello, I'm <span class="highlight">Your Name</span></h1>
-            <p class="hero-subtitle">Full Stack Developer</p>
+            <p class="hero-subtitle"><span id="typing"></span></p>
             <p class="hero-description">I create beautiful and functional web applications</p>
             <div class="hero-buttons">
                 <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -42,17 +72,21 @@
             </div>
         </div>
         <div class="hero-image">
+            <div class="pulse-ring"></div>
             <img src="images/profile.jpg" alt="Profile Picture">
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- ===========================
+         About Section
+    =========================== -->
     <section id="about" class="about">
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I am a passionate Full Stack Developer with experience in creating web applications using modern technologies. I love solving complex problems and learning new technologies.</p>
+                    <p>I am a passionate Full Stack Developer with experience in creating web applications using modern
+                        technologies. I love solving complex problems and learning new technologies.</p>
                     <div class="about-stats">
                         <div class="stat-item">
                             <h3>2+</h3>
@@ -75,7 +109,9 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- ===========================
+         Skills Section
+    =========================== -->
     <section id="skills" class="skills">
         <div class="container">
             <h2 class="section-title">My Skills</h2>
@@ -114,8 +150,10 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <!-- ===========================
+         Projects Section
+    =========================== -->
+    <section id="projects" class="project-card web">
         <div class="container">
             <h2 class="section-title">My Projects</h2>
             <div class="projects-grid">
@@ -125,8 +163,9 @@
                         <h3>E-commerce Website</h3>
                         <p>A full-stack e-commerce solution built with React and Node.js</p>
                         <div class="project-links">
-                            <a href="#" class="btn btn-small">Live Demo</a>
-                            <a href="#" class="btn btn-small btn-secondary">GitHub</a>
+                            <a href="https://brilliant-kashata-5a8ed3.netlify.app/" class="btn btn-small">Live Demo</a>
+                            <a href="https://github.com/ENGCE301-1-68/mini-ecommerce-collaboration"
+                                class="btn btn-small btn-secondary">GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -156,7 +195,9 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- ===========================
+         Contact Section
+    =========================== -->
     <section id="contact" class="contact">
         <div class="container">
             <h2 class="section-title">Get In Touch</h2>
@@ -167,15 +208,17 @@
                     <div class="contact-details">
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
-                            <span>your.email@example.com</span>
+                            <span>bankkanthajai@gmail.com</span>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
-                            <span>+66 12 345 6789</span>
+                            <span>+66 933744991</span>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>Bangkok, Thailand</span>
+                            <a href="https://www.google.com/maps?q=33/1+ต.ปงยางคก+อ.ห้างฉัตร+จ.ลำปาง" target="_blank">
+                                33/1 ต.ปงยางคก อ.ห้างฉัตร จ.ลำปาง
+                            </a>
                         </div>
                     </div>
                     <div class="social-links">
@@ -200,7 +243,9 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- ===========================
+         Footer
+    =========================== -->
     <footer class="footer">
         <div class="container">
             <p>&copy; 2024 Your Name. All rights reserved.</p>
@@ -209,4 +254,5 @@
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
