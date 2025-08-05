@@ -2,7 +2,7 @@
 # portfolio-website
 
 เว็บไซต์ Portfolio ส่วนตัวที่สร้างขึ้นเพื่อแสดงผลงาน ความสามารถ และข้อมูลติดต่อ
-- ตัวอย่างหน้าเว็บไซต์ [Click]([https://68912e0c80667d7b6669f0f9--benjarong.netlify.app/](https://luminous-stroopwafel-ee0dfe.netlify.app/))
+- ตัวอย่างหน้าเว็บไซต์ [Click](https://luminous-stroopwafel-ee0dfe.netlify.app/)
 
 ## Main Features
 
