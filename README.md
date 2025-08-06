@@ -29,7 +29,6 @@
 
 ## โครงสร้างโปรเจค
 ```bash
-├── README.md
 ├── css
     └── style.css
 ├── images
