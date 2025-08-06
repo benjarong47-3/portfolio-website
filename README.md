@@ -29,7 +29,6 @@
 
 ## โครงสร้างโปรเจค
 ```bash
-  ├── .gitignore
 ├── README.md
 ├── css
     └── style.css
